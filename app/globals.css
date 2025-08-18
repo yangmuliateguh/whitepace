@@ -9,6 +9,13 @@
   --color-highlight: 255, 228, 146;  
 }
 
+/* body {
+  transform: scale(0.75);
+  transform-origin: top left;
+  width: 133.33%;  
+  height: 133.33%;
+} */
+
 /* background colors */
 .bg-primary {
     @apply bg-[rgb(var(--color-primary))];
@@ -35,7 +42,17 @@
 .text-secondary{
     @apply text-[rgb(var(--color-secondary))];
 }
+
+.text-highlight{
+    @apply text-[rgb(var(--color-highlight))];
+}
 /* text color */
+
+/* border color */
+.border-highlight{
+    @apply border-[rgb(var(--color-highlight))];
+}
+/* border color */
 
 /* text size */
 .text-h{
@@ -53,6 +70,4 @@
 .text-p{
     @apply text-[18px];
 }
-
-
 /* text size */

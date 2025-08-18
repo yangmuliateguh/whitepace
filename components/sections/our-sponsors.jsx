@@ -6,14 +6,14 @@ import Googleimg from "@/public/img/Google.png"
 
 export default function oursponsors() {
   return (
-    <div className="bg-primary text-center w-full px-[220px] py-[140px] text-black border-2">
+    <div className="bg-primary text-center w-full px-[220px] py-[140px] space-y-[100px] text-black ">
         <h1 className="text-[72px] font-semibold ">Our sponsors</h1>
-        <ul className="border-2">
+        <ul className=" flex items-center justify-between">
             <li>
               <Image 
                 src={Appleimg} 
-                width={824}
-                height={549}
+                width={55.47}
+                height={68}
                 priority
                 alt="Hero image" 
                 className="drop-shadow-lg"
@@ -22,8 +22,8 @@ export default function oursponsors() {
             <li>
               <Image 
                 src={Msimg} 
-                width={824}
-                height={549}
+                width={287}
+                height={62}
                 priority
                 alt="Hero image" 
                 className="drop-shadow-lg"
@@ -32,8 +32,8 @@ export default function oursponsors() {
             <li>
               <Image 
                 src={Slackimg} 
-                width={824}
-                height={549}
+                width={280}
+                height={71}
                 priority
                 alt="Hero image" 
                 className="drop-shadow-lg"
@@ -42,8 +42,8 @@ export default function oursponsors() {
             <li>
               <Image 
                 src={Googleimg} 
-                width={824}
-                height={549}
+                width={211}
+                height={69.81}
                 priority
                 alt="Hero image" 
                 className="drop-shadow-lg"

@@ -1,4 +1,5 @@
 import { FaAngleDown, FaArrowRight } from "react-icons/fa6";
+import Button from "../ui/button";
 
 export default function navbar(){
     return(
@@ -20,10 +21,8 @@ export default function navbar(){
             </ul>
             {/* button */}
             <div className="flex text-button space-x-[24px]">
-                <button className="bg-highlight text-secondary py-[16px] px-[40px] rounded-[10px] text-[18px]">Login</button>
-                <button className="bg-accent flex items-center py-[16px] px-[24px] rounded-[10px] text-[18px] text-primary">
-                    <p className="mr-[10px]">Try Whitepace Free</p> <FaArrowRight />
-                </button>
+                <Button padding="tight" variant="highlight" >Login</Button>
+                <Button padding="normal" variant="accent" rightIcon={<FaArrowRight />}>Try Whitepace Free</Button>
             </div>
         </div>
     );

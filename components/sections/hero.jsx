@@ -2,6 +2,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import Image from "next/image";
 import Heroimg from "@/public/img/hero.png"
 import Bgimg from "@/public/img/bg-img.png"
+import Button from "../ui/button"
 
 export default function hero() {
   return (
@@ -14,14 +15,12 @@ export default function hero() {
       }}
     >
         {/* content */}
-        <div className=" z-10">
+        <div className="w-[650px] z-10">
           <div className="space-y-[24px]">
             <h1 className="text-[64px] font-semibold ">Get More Done with whitepace</h1>
             <p className="text-[18px] ">Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks</p>
           </div>
-          <button className="bg-accent flex items-center py-[16px] px-[24px] mt-[40px] rounded-[10px] text-[18px] text-primary">
-            <p className="mr-[10px]">Try Whitepace Free</p> <FaArrowRight />
-          </button>
+          <Button className="mt-[40px]" padding="normal" variant="accent" rightIcon={<FaArrowRight />}>Try Whitepace Free</Button>
         </div>
         {/* img */}
         <div className="z-10">
