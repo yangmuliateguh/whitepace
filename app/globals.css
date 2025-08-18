@@ -55,19 +55,31 @@
 /* border color */
 
 /* text size */
-.text-h{
-    @apply text-[64px];
-}
-
-.text-price{
-    @apply text-[34px];
-}
-
-.text-button{
+.text-logo{
     @apply text-[24px];
 }
 
-.text-p{
-    @apply text-[18px];
+.text-headerh1{
+    @apply text-[62px];
+}
+
+.text-headerh2{
+    @apply text-[54px];
+}
+
+.text-headerh4{
+    @apply text-[36px];
+}
+
+.text-p1{
+    @apply text-[24px];
+}
+
+.text-p2{
+    @apply text-[16px];
+}
+
+.text-p3{
+    @apply text-[14px];
 }
 /* text size */

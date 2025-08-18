@@ -5,7 +5,7 @@ export default function navbar(){
     return(
         <div className="flex justify-between items-center ">
             {/* nav-menu */}
-            <ul className="mr-[60px] flex justify-center space-x-[32px] text-p ">
+            <ul className="mr-[30px] flex justify-center space-x-[16px] text-p2 ">
                 <li className="flex items-center ">
                     <p className="mr-[20px]">Products</p> <FaAngleDown  />
                 </li>
@@ -20,9 +20,9 @@ export default function navbar(){
                 </li>
             </ul>
             {/* button */}
-            <div className="flex text-button space-x-[24px]">
-                <Button padding="tight" variant="highlight" >Login</Button>
-                <Button padding="normal" variant="accent" rightIcon={<FaArrowRight />}>Try Whitepace Free</Button>
+            <div className="flex text-button space-x-[12px]">
+                <Button padding="tight" variant="highlight" size="medium">Login</Button>
+                <Button padding="normal" variant="accent" size="medium" rightIcon={<FaArrowRight />}>Try Whitepace Free</Button>
             </div>
         </div>
     );

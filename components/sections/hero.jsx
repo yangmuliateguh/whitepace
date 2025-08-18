@@ -6,24 +6,24 @@ import Button from "../ui/button"
 
 export default function hero() {
   return (
-    <div className="bg-secondary bg-cover w-full flex items-center px-[220px] py-[140px] text-primary"
-      style={{
-        backgroundImage : `url(${Bgimg.src})`,
-        backgroundSize : '2651.8 547',
-        backgroundPosition : 'center',
-        backgroundRepeat : 'no-repeat'
-      }}
-    >
+    <div className="bg-secondary w-full flex relative items-center px-[110px] py-[30px]  text-primary">
+      <Image 
+        src={Bgimg} 
+        width={2000}
+        priority
+        alt="Hero image" 
+        className="absolute top-[14rem] left-[0rem] z-0"
+      />
         {/* content */}
-        <div className="w-[650px] z-10">
-          <div className="space-y-[24px]">
-            <h1 className="text-[64px] font-semibold ">Get More Done with whitepace</h1>
-            <p className="text-[18px] ">Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks</p>
+        <div className="w-[650px] z-10 ">
+          <div className="space-y-[24px] ">
+            <h2 className="text-headerh2 font-bold ">Get More Done with whitepace</h2>
+            <p className="text-p2 ">Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks</p>
           </div>
-          <Button className="mt-[40px]" padding="normal" variant="accent" rightIcon={<FaArrowRight />}>Try Whitepace Free</Button>
+          <Button className="mt-[40px]" padding="normal" variant="accent" size="medium" rightIcon={<FaArrowRight />}>Try Whitepace Free</Button>
         </div>
         {/* img */}
-        <div className="z-10">
+        <div className="z-10 ">
             <Image 
               src={Heroimg} 
               width={824}

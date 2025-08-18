@@ -3,17 +3,26 @@ import Appleimg from "@/public/img/Apple.png"
 import Msimg from "@/public/img/Microsoft.png"
 import Slackimg from "@/public/img/Slack.png"
 import Googleimg from "@/public/img/Google.png"
+import Sponsorsimg from "@/public/img/sponsors.png"
 
 export default function oursponsors() {
   return (
-    <div className="bg-primary text-center w-full px-[220px] py-[140px] space-y-[100px] text-black ">
-        <h1 className="text-[72px] font-semibold ">Our sponsors</h1>
+    <div className="bg-primary text-center w-full px-[110px] py-[140px] space-y-[100px] text-black ">
+        <h1 className="text-headerh1 font-bold relative inline-block">Our 
+          <span className="relative z-10"> sponsors</span>
+          <Image 
+              src={Sponsorsimg} 
+              width={270}
+              priority
+              alt="project management" 
+              className="absolute top-15 left-32 z-0"
+          />
+        </h1>
         <ul className=" flex items-center justify-between">
             <li>
               <Image 
                 src={Appleimg} 
-                width={55.47}
-                height={68}
+                width={55}
                 priority
                 alt="Hero image" 
                 className="drop-shadow-lg"
@@ -22,8 +31,7 @@ export default function oursponsors() {
             <li>
               <Image 
                 src={Msimg} 
-                width={287}
-                height={62}
+                width={257}
                 priority
                 alt="Hero image" 
                 className="drop-shadow-lg"
@@ -32,8 +40,7 @@ export default function oursponsors() {
             <li>
               <Image 
                 src={Slackimg} 
-                width={280}
-                height={71}
+                width={250}
                 priority
                 alt="Hero image" 
                 className="drop-shadow-lg"
@@ -42,8 +49,7 @@ export default function oursponsors() {
             <li>
               <Image 
                 src={Googleimg} 
-                width={211}
-                height={69.81}
+                width={181}
                 priority
                 alt="Hero image" 
                 className="drop-shadow-lg"

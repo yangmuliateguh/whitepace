@@ -12,22 +12,23 @@ export default function Button({
     onClick,
     rightIcon,
 }) {
-    const baseStyles = 'flex items-center rounded-[10px]'
+    const baseStyles = 'flex items-center rounded-[5px]'
 
     const variantStyles = {
         highlight : 'bg-highlight text-secondary',
-        accent : 'bg-accent text-primary'
+        accent : 'bg-accent text-primary',
+        primary : 'bg-primary text-black border-2 border-highlight'
     };
 
     const paddingStyles = {
-        tight : 'py-[16px] px-[40px]',
-        normal : 'py-[16px] px-[24px]'
+        tight : 'py-[8px] px-[20px]',
+        normal : 'py-[8px] px-[24px]'
     };
 
     const sizeStyles ={
-        small : 'text-[16px]',
-        medium : 'text-[18px]',
-        large : 'text-[24px]'
+        small : 'text-[14px]',
+        medium : 'text-p2',
+        large : 'text-[18px]'
     }
 
     const widthStyle = fullWidth ? 'w-full' : 'w-auto';
