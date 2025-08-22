@@ -22,7 +22,7 @@ export default function Button({
 
     const paddingStyles = {
         tight : 'py-[8px] px-[20px]',
-        normal : 'py-[8px] px-[24px]'
+        normal : 'py-[20px] px-[40px]'
     };
 
     const sizeStyles ={

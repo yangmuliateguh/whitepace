@@ -9,72 +9,75 @@ import Worktogetherimgbg from "@/public/img/work-together-bg2.png"
 
 export default function workmanagement() {
   return (
-    <div className="bg-primary w-full py-[140px] px-[110px] text-black space-y-[100px]">
-        <div className="flex items-center space-x-[50px] relative">
+    <div className="bg-primary w-full py-[80px] px-[16px] text-black space-y-[100px]">
+        {/* project management */}
+        <div className="flex flex-col items-center relative">
+            {/* project management background */}
             <Image 
                 src={Projectimgbg} 
-                width={500}
+                width={168.75}
                 priority
                 alt="project management" 
-                className="absolute top-20 left-[-17rem] z-0"
+                className="absolute top-0 left-0 z-0"
             />
             {/* content */}
-            <div className="w-[670px] z-10 ">
-                <div className="space-y-[24px]">
-                    <h1 className="text-headerh1 font-bold relative inline-block">Project
-                        <span className="relative z-10"> Management</span>
-                        <Image 
-                            src={Management} 
-                            width={410}
-                            priority
-                            alt="project management" 
-                            className="absolute top-40 left-0 z-0"
-                        />
-                    </h1>
-                    <p className="text-p2 ">Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.</p>
+            <div className="z-10 flex flex-col items-center space-y-[60px]">
+                {/* text */}
+                <div className="flex flex-col items-center space-y-[60px]">
+                    <div className="space-y-[24px] text-center">
+                        <h1 className="text-headerh4 font-bold relative inline-block">Project
+                            <span className="relative z-10"> Management</span>
+                            <Image 
+                                src={Management} 
+                                width={254.66}
+                                priority
+                                alt="project management" 
+                                className="absolute top-0 left-0 z-0"
+                            />
+                        </h1>
+                        <p className="text-p2 ">Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.</p>
+                    </div>
+                    <Button className="" padding="normal" variant="accent" size="medium" rightIcon={<FaArrowRight />}>Get Started</Button>
                 </div>
-                <Button className="mt-[40px]" padding="normal" variant="accent" size="medium" rightIcon={<FaArrowRight />}>Get Started</Button>
-            </div>
-            {/* img */}
-            <div className="">
+                {/* image  */}
                 <Image 
                     src={Projectimg} 
-                    width={648}
+                    width={286}
                     priority
                     alt="project management" 
                     className="drop-shadow-lg "
                 />
             </div>
-        </div>
-        <div className="flex items-center space-x-[100px]">
             {/* img */}
-            <div className="z-10">
-                <Image 
-                src={Worktogetherimg} 
-                width={680}
-                height={661}
-                priority
-                alt="work together" 
-                className="drop-shadow-lg"
-                />
-            </div>
+        </div>
+        {/* work together */}
+        <div className="flex flex-col items-center space-y-[60px]">
             {/* content */}
-            <div className="w-[670px]">
-                <div className="space-y-[24px]">
-                    <h1 className="text-headerh1 font-bold relative inline-block">Work
+            <div className="flex flex-col items-center space-y-[60px]">
+                {/* text */}
+                <div className="space-y-[24px] text-center">
+                    <h1 className="text-headerh4 font-bold relative inline-block">Work
                         <span className="relative z-10"> together</span>
                         <Image 
                             src={Worktogetherimgbg} 
                             width={280}
                             priority
                             alt="project management" 
-                            className="absolute top-15 left-44 z-0"
+                            className="absolute top-0 left-0 z-0"
                         />
                     </h1>
                     <p className="text-p2 ">With whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.</p>
                 </div>
-                <Button className="mt-[40px]" padding="normal" variant="accent" rightIcon={<FaArrowRight />}>Try it now</Button>
+                <Button className="" padding="normal" variant="accent" rightIcon={<FaArrowRight />}>Try it now</Button>
             </div>
+            {/* image */}
+            <Image 
+                src={Worktogetherimg} 
+                width={279}
+                priority
+                alt="work together" 
+                className="drop-shadow-lg"
+            />
         </div>
     </div>
   );

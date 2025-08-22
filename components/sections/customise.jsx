@@ -9,58 +9,60 @@ import Button from "../ui/button";
 export default function customise() {
   return (
     <div className="w-full text-primary">
-      <div className="bg-secondary px-[110px] py-[140px] flex items-center space-x-[100px] ">
+      <div className="bg-secondary px-[16px] py-[80px] flex items-center flex-col space-y-[60px] ">
           {/* content */}
-          <div className="z-10 w-[697px]">
-            <div className="space-y-[24px]">
-              <h1 className="text-headerh1 font-bold relative inline-block">Use as 
+          <div className="z-10 flex flex-col items-center space-y-[60px]">
+            {/* text */}
+            <div className="space-y-[24px] text-center">
+              <h1 className="text-headerh4 font-bold relative inline-block">Use as
                 <span className="relative z-10"> Extension</span>
                 <Image 
                     src={Extensionimgbg} 
-                    width={350}
+                    width={173.13}
                     priority
                     alt="project management" 
-                    className="absolute top-17 left-34 z-0"
+                    className="absolute top-0 left-0 z-0"
                 />
               </h1>
-              <p className="text-p2 ">Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.</p>
-              <Button className="mt-[40px]" padding="normal" variant="accent" size="medium" rightIcon={<FaArrowRight />}>Let's Go</Button>
+              <p className="text-p2">Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.</p>
             </div>
+            <Button padding="normal" variant="accent" size="medium" rightIcon={<FaArrowRight />}>Let's Go</Button>
           </div>
           {/* img */}
           <Image 
             src={Extensionimg} 
-            width={560}
+            width={284.5}
             priority
             alt="Hero image" 
             className="drop-shadow-lg"
           />
       </div>
-      <div className="bg-primary px-[110px] py-[140px] flex items-center space-x-[100px] text-black ">
+      <div className="bg-primary px-[16px] py-[100px] flex items-center flex-col space-y-[60px] text-black ">
           {/* img */}
           <Image 
             src={Customiseimg} 
-            width={589}
+            width={288}
             priority
             alt="Hero image" 
             className="drop-shadow-lg"
           />
           {/* content */}
-          <div className="z-10 w-[560px]">
-            <div className="space-y-[24px]">
-              <h1 className="text-headerh1 font-bold relative inline-block">Customise it to
+          <div className="z-10 flex flex-col items-center space-y-[60px]">
+            {/* text */}
+            <div className="space-y-[24px] text-center">
+              <h1 className="text-headerh4 font-bold relative inline-block">Customise it to
                 <span className="relative z-10"> your needs</span>
                 <Image 
                     src={Yourneedsimgbg} 
-                    width={540}
+                    width={171.24}
                     priority
                     alt="project management" 
-                    className="absolute top-31 left-0 z-0"
+                    className="absolute top-0 left-0 z-0"
                 />
               </h1>
               <p className="text-p2">Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.</p>
-              <Button className="mt-[40px]" padding="normal" variant="accent" size="medium" rightIcon={<FaArrowRight />}>Let's Go</Button>
             </div>
+            <Button className="mt-[40px]" padding="normal" variant="accent" size="medium" rightIcon={<FaArrowRight />}>Let's Go</Button>
           </div>
       </div>
     </div>

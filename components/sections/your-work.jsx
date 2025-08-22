@@ -6,28 +6,31 @@ import Image from "next/image";
 
 export default function yourwork() {
   return (
-    <div className="bg-secondary w-full flex flex-col items-center px-[110px] py-[140px] text-primary  relative">
+    <div className="bg-secondary w-full flex flex-col items-center px-[16px] py-[100px] text-primary relative">
       <Image 
           src={Yourworkbg} 
           width={500}
           priority
           alt="project management" 
-          className="absolute top-[-13rem] left-[-8rem] z-0"
+          className="absolute top-0 left-0 z-0"
       />
-      <div className="w-[920px] space-y-[24px] text-center">
-        <h1 className="text-headerh1 font-bold relative inline-block">Your work, everywhere 
+      <div className="space-y-[60px]">
+        <div className="space-y-[24px] ">
+          <h1 className="text-headerh4 font-bold relative inline-block">Your work, everywhere 
+            <br />
           <span className="relative z-10"> you are</span>
           <Image
             src={Youare} 
             width={265}
             priority
             alt="project management" 
-            className="absolute top-16 left-166 z-0"
+            className="absolute top-0 left-0 z-0"
           />
-        </h1>
+          </h1>
         <p className="text-p2 ">Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!</p>
+        </div>
+        <Button  padding="normal" variant="accent" size="medium" rightIcon={<FaArrowRight />}>Try Taskey</Button>
       </div>
-      <Button className="mt-[60px]" padding="normal" variant="accent" size="medium" rightIcon={<FaArrowRight />}>Try Taskey</Button>
     </div>
   );
 }

@@ -2,6 +2,14 @@
 @import "tailwindcss";
 @tailwind utilities;
 
+@theme {
+    --breakpoint-2xl: 120rem;
+    --breakpoint-xl: 90rem;
+    --breakpoint-lg: 72rem;
+    --breakpoint-md: 48rem;
+    --breakpoint-sm: 20rem;
+}
+
 :root {
   --color-primary: 255, 255, 255;    
   --color-secondary: 4, 56, 115;     
@@ -56,7 +64,7 @@
 
 /* text size */
 .text-logo{
-    @apply text-[24px];
+    @apply text-[20px];
 }
 
 .text-headerh1{

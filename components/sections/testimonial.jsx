@@ -6,16 +6,16 @@ import Slider from "@/public/img/slider.png"
 
 export default function testimonial() {
   return (
-    <div className="bg-primary w-full px-[110px] py-[140px] text-black  space-y-[60px]">
+    <div className="bg-primary w-full px-[16px] py-[100px] text-black  space-y-[60px]">
         <div className="text-center">
-            <h1 className="text-[72px] font-bold relative inline-block z-10">What Our Clients 
+            <h1 className="text-headerh4 font-bold relative inline-block z-10">What Our Clients 
                 <span className="relative z-10"> Says</span>
                 <Image 
                     src={Says} 
                     width={220}
                     priority
                     alt="project management" 
-                    className="absolute top-12 left-145 z-0"
+                    className="absolute top-0 left-0 z-0"
                 />
             </h1>
         </div>
